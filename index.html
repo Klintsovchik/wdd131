@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Timofey</title>
+    <meta name="description" content="This is a WDD 131 – Dynamic Web Fundamentals course project by Timofey. It covers the basics of web development, including HTML, CSS, and JavaScript.">
+    <meta name="author" content="Timofey Klintsov">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <center><h1>Hello World!</h1></center>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/timothy-klintsov-044992391/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+        <main>
+            <h1>Timofey Klintsov</h1>
+
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/mypicture.jpg" alt="Me At the Beach" class="profile-image">
+                <p>Hello! My name is Timofey Klintsov, and I am a student in the WDD 131 – Dynamic Web Fundamentals course. I have a passion for web development and enjoy creating interactive and user-friendly websites. In this course, I am learning the fundamentals of HTML, CSS, and JavaScript, which are essential skills for any aspiring web developer.</p>
+
+                <h3>Georgia</h3>
+
+                <div class="country-info">
+                    <img src="images/georgia-flag.png" alt="Flag of Georgia">
+
+                    <p>
+                        Georgia is a country located at the crossroads of Eastern Europe
+                        and Western Asia. It is known for its ancient history, mountains,
+                        hospitality, traditional cuisine, and unique Georgian language.
+                        The capital city is Tbilisi. But i live in the city of Batumi, which is located on the coast of the Black Sea. Batumi is known for its beautiful beaches, modern architecture, and vibrant nightlife. It is a popular tourist destination and a great place to live for those who enjoy a mix of urban and coastal lifestyles.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs - JavaScript</a></li>
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                    <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                </ul>
+            </section>
+
+
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Timofey Klintsov | Georgia. All rights reserved.</p>
+            <p id="lastModified"></p>
+        </footer>
+    </header>
 </body>
 </html>
