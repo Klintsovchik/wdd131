@@ -1,0 +1,60 @@
+@media screen and (min-width: 45rem) {
+
+  .header-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 1rem;
+  }
+
+
+  .site-title {
+    padding: 1.2rem 0;
+  }
+
+
+  #menu {
+    display: none;
+  }
+
+
+  nav {
+    flex-direction: row;
+
+    margin: 0;
+
+    background-color: transparent;
+  }
+
+
+  nav a {
+    display: block;
+
+    padding: 1.4rem 1.3rem;
+  }
+
+
+  nav a:hover {
+    background-color: #28699f;
+  }
+
+
+  main {
+    padding: 2.5rem 1rem;
+  }
+
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+  }
+
+
+  figure img {
+    height: 220px;
+  }
+
+}
