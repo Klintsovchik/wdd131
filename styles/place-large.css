@@ -1,0 +1,72 @@
+
+@media only screen and (min-width: 700px) {
+
+  header {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+
+
+
+  .hero {
+    position: relative;
+  }
+
+  .hero picture img {
+    width: 100%;
+    height: clamp(420px, 68vh, 680px);
+    object-fit: cover;
+  }
+
+
+  .card {
+    position: absolute;
+    width: min(340px, 34%);
+    padding: 0 var(--space-md) var(--space-md);
+    border-bottom: none;
+    border-radius: var(--radius);
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--shadow);
+  }
+
+  .data {
+    top: var(--space-lg);
+    left: var(--space-lg);
+  }
+
+  .weather {
+    right: var(--space-lg);
+    bottom: var(--space-lg);
+  }
+
+  .card h2 {
+    margin: 0 calc(-1 * var(--space-md)) var(--space-md);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius) var(--radius) 0 0;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .card h2::before {
+    display: none;
+  }
+  .weather h2::after {
+    content: " \26C5";
+    margin-left: var(--space-sm);
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .card dl {
+    justify-content: end;
+  }
+
+}
