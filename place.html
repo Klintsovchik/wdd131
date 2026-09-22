@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Georgia | WDD 131 | Dynamic Web Fundamentals | Timofey Klintsov</title>
+
+  <meta
+    name="description"
+    content="A responsive country page about Georgia - facts, figures and current weather for the country at the crossroads of Europe and Asia."
+  >
+
+  <meta name="author" content="Timofey Klintsov">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Georgia</h1>
+  </header>
+
+
+  <main>
+
+    <div class="hero">
+
+      <picture>
+        <source srcset="images/georgia-hero-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/georgia-hero-medium.webp" media="(min-width: 700px)">
+        <img
+          src="images/georgia-hero-small.webp"
+          alt="Aerial view of the snow-covered village of Stepantsminda in the Caucasus mountains of Georgia"
+          width="600"
+          height="720"
+        >
+      </picture>
+
+
+      <section class="card data">
+
+        <h2>Data</h2>
+
+        <dl>
+          <dt>Area:</dt>
+          <dd>69,700 sq km</dd>
+
+          <dt>Population:</dt>
+          <dd>3,694,600</dd>
+
+          <dt>Capital:</dt>
+          <dd>Tbilisi</dd>
+
+          <dt>Languages:</dt>
+          <dd>Georgian, Abkhazian</dd>
+
+          <dt>Currency:</dt>
+          <dd>Georgian Lari</dd>
+
+          <dt>Time Zone:</dt>
+          <dd>UTC+4</dd>
+
+          <dt>Calling Code:</dt>
+          <dd>+995</dd>
+
+          <dt>Internet TLD:</dt>
+          <dd>.ge</dd>
+        </dl>
+
+      </section>
+
+
+      <section class="card weather">
+
+        <h2>Weather</h2>
+
+        <img
+          class="weather-icon"
+          src="images/partly-cloudy.svg"
+          alt="Partly cloudy"
+          width="96"
+          height="96"
+        >
+
+        <dl>
+          <dt>Temperature:</dt>
+          <dd>8 &deg;C</dd>
+
+          <dt>Conditions:</dt>
+          <dd>Partly Cloudy</dd>
+
+          <dt>Wind:</dt>
+          <dd>12 km/h</dd>
+
+          <dt>Wind Chill:</dt>
+          <dd id="windchill"></dd>
+        </dl>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      &copy;
+      <span id="currentyear"></span>
+      &#127956;&#65039; Timofey Klintsov &#127956;&#65039; Batumi, Georgia
+    </p>
+
+    <p id="lastModified"></p>
+
+  </footer>
+
+</body>
+
+</html>
