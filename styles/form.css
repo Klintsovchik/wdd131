@@ -1,0 +1,245 @@
+:root {
+
+  --color-primary: #2e0327;
+  --color-form-bg: #d7cdd6;
+  --color-white: #ffffff;
+  --color-ink: #111111;
+  --color-optional: #0a0a80;
+  --color-line: #b9adb8;
+  --color-button: #efefef;
+
+  --font-body: "Lato", "Segoe UI", sans-serif;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.75rem;
+
+  --radius: 4px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-ink);
+  line-height: 1.4;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+
+
+
+header {
+  background-color: var(--color-primary);
+  padding: var(--space-md);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 2.25rem;
+}
+
+
+
+
+main {
+  padding: var(--space-lg) 0;
+}
+
+form,
+.confirmation {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  background-color: var(--color-form-bg);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+
+form > label,
+legend {
+  display: block;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+form > label:first-child {
+  margin-top: 0;
+}
+
+.optional {
+  color: var(--color-optional);
+  font-size: 1rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem var(--space-md);
+  border: 1px solid var(--color-line);
+  border-radius: 0;
+  background-color: var(--color-white);
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+
+
+.rating {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.rating legend {
+  grid-column: 1 / -1;
+}
+
+.rating label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.rating input {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+
+
+
+.features label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.features input {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+
+
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-lg);
+  padding: 0.75rem;
+  border: 1px solid #777777;
+  border-radius: var(--radius);
+  background-color: var(--color-button);
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+
+
+
+.confirmation {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.confirmation h2 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.confirmation a {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+
+
+
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-md);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+
+@media (max-width: 680px) {
+
+  main {
+    padding: var(--space-md) 0;
+  }
+
+  form,
+  .confirmation {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+}
