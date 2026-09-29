@@ -1,0 +1,248 @@
+:root {
+  --parchment: #f5efe0;
+  --ink: #2b2118;
+  --burgundy: #7b2d26;
+  --gold: #b8923f;
+
+  --heading-font: "Cinzel", Georgia, serif;
+  --body-font: "Lora", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: var(--body-font);
+  line-height: 1.6;
+
+  background-color: var(--parchment);
+  color: var(--ink);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  background-color: var(--ink);
+  color: var(--parchment);
+  border-bottom: 4px solid var(--gold);
+}
+
+header img {
+  background-color: var(--parchment);
+  border-radius: 50%;
+}
+
+header p {
+  margin: 0;
+}
+
+.site-title {
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
+
+
+/* Main */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--burgundy);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin-top: 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--gold);
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+
+  background-color: #fffaf0;
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+}
+
+.big-name {
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--burgundy);
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+
+/* Color schema */
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.swatch p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.chip {
+  height: 70px;
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+}
+
+.chip-parchment {
+  background-color: var(--parchment);
+}
+
+.chip-ink {
+  background-color: var(--ink);
+}
+
+.chip-burgundy {
+  background-color: var(--burgundy);
+}
+
+.chip-gold {
+  background-color: var(--gold);
+}
+
+
+/* Typography */
+
+.font-sample {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--gold);
+}
+
+.font-name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.sample-cinzel {
+  margin: 0.3rem 0;
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  color: var(--burgundy);
+}
+
+.sample-lora {
+  margin: 0.3rem 0;
+  font-family: var(--body-font);
+  font-size: 1.15rem;
+}
+
+
+/* Figures */
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  border: 1px solid var(--ink);
+  background-color: white;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 0.4rem;
+}
+
+.sketch img {
+  width: 240px;
+}
+
+.wireframes {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.wireframes figure:first-child img {
+  width: 260px;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+
+  text-align: center;
+
+  background-color: var(--ink);
+  color: var(--parchment);
+  border-top: 4px solid var(--gold);
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+
+/* Wider views */
+
+@media screen and (min-width: 45rem) {
+
+  .site-title {
+    font-size: 2.2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .swatches {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .wireframes {
+    grid-template-columns: 1fr 2.5fr;
+    align-items: start;
+  }
+
+  .wireframes figure:first-child img {
+    width: 100%;
+  }
+
+}
