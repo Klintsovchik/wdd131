@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Site Plan | The Twelve: Stories of the Apostles | WDD 131 | Timofey Klintsov</title>
+  <title>Site Plan | The Twelve | WDD 131 | Timofey Klintsov</title>
 
   <meta
     name="description"
-    content="Website planning document for The Twelve: Stories of the Apostles - site name, purpose, scenarios, color schema, typography and wireframes."
+    content="Site plan for The Twelve: Stories of the Apostles - site name, purpose, scenarios, colors, fonts and wireframes."
   >
 
   <meta name="author" content="Timofey Klintsov">
 
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/siteplan.css">
 
@@ -27,167 +29,109 @@
 <body>
 
   <header>
-    <img src="images/logo.svg" alt="The Twelve logo - a pencil sketch of a fish inside a circle of twelve dots" width="80" height="80">
+    <img src="images/logo.webp" alt="The Twelve logo" width="60" height="60">
     <div>
       <p class="site-title">The Twelve</p>
-      <p class="site-subtitle">Stories of the Apostles &middot; Website Plan</p>
+      <p>Stories of the Apostles</p>
     </div>
   </header>
 
 
   <main>
 
-    <h1>Website Planning Document</h1>
+    <h1>Site Plan</h1>
 
 
-    <section id="site-name">
+    <section>
       <h2>Site Name</h2>
 
-      <p class="big-name">The Twelve: Stories of the Apostles</p>
+      <p><strong>The Twelve: Stories of the Apostles</strong></p>
 
       <ul>
-        <li>
-          &ldquo;The Twelve&rdquo; is how the New Testament itself often refers to the apostles
-          chosen by Jesus Christ, so the name is short, familiar and easy to remember.
-        </li>
-        <li>
-          &ldquo;Stories of the Apostles&rdquo; tells visitors right away that the site is about
-          their lives and experiences, told as stories rather than as a dry list of facts.
-        </li>
+        <li>The New Testament often calls the apostles "the Twelve", so the name is short and easy to remember.</li>
+        <li>"Stories of the Apostles" shows that the site is about their lives and stories.</li>
       </ul>
 
-      <p>Optional domain availability: <strong>thetwelve-stories.org</strong></p>
+      <p>Optional domain: thetwelve-stories.org</p>
     </section>
 
 
-    <section id="site-purpose">
+    <section>
       <h2>Site Purpose</h2>
 
       <p>
-        The site introduces visitors to the twelve apostles of Jesus Christ and presents their
-        stories in an engaging and visually appealing way. For each apostle the site will provide:
+        The site introduces visitors to the twelve apostles of Jesus Christ and tells their stories.
+        Each apostle will have a short biography, important events from his life, interesting facts,
+        places connected with his ministry and references to the New Testament.
       </p>
-
-      <ul>
-        <li>a short biography and a hand-drawn (pencil sketch) portrait;</li>
-        <li>important events from his life and ministry;</li>
-        <li>interesting facts (former occupation, symbols, nicknames);</li>
-        <li>places connected with his ministry;</li>
-        <li>references to the New Testament accounts where his story can be read.</li>
-      </ul>
 
       <p>
-        The site will also include a page to filter the apostles (for example, &ldquo;fishermen&rdquo;
-        or &ldquo;wrote a book of the Bible&rdquo;) and a simple form where visitors can share
-        which story inspired them most.
+        Each apostle is shown with a classic painting from Wikimedia Commons, so the site also works
+        like a small art gallery. All images are public domain and listed on an Attributions page.
       </p>
+
+      <p>Pages: Home, Apostles, Journey.</p>
     </section>
 
 
-    <section id="scenarios">
+    <section>
       <h2>Scenarios</h2>
 
-      <p>Target audience: students, families, seminary and Sunday School classes, and anyone curious about the New Testament.</p>
-
       <ul>
-        <li>Who were the twelve apostles, and what were their names?</li>
-        <li>What did Peter do before he was called to follow Jesus?</li>
+        <li>Who were the twelve apostles?</li>
+        <li>What did Peter do before he followed Jesus?</li>
         <li>Where can I read about Thomas in the New Testament?</li>
-        <li>Which places did Paul and the other apostles travel to while preaching?</li>
-        <li>What is an interesting fact I can share in a lesson about the apostles?</li>
+        <li>Which places did the apostles travel to?</li>
       </ul>
     </section>
 
 
-    <section id="colors">
+    <section>
       <h2>Color Schema</h2>
 
-      <p>
-        The colors are inspired by old parchment, ink and pencil drawings, so the site feels like
-        an illustrated story book.
-      </p>
-
-      <div class="swatches">
-
-        <div class="swatch">
-          <div class="chip chip-parchment"></div>
-          <p><strong>Parchment</strong> <code>#F5EFE0</code></p>
-          <p>Page background, cards on dark header</p>
+      <div class="colors">
+        <div>
+          <div class="color color1"></div>
+          <p>#F5EFE0 - background</p>
         </div>
 
-        <div class="swatch">
-          <div class="chip chip-ink"></div>
-          <p><strong>Ink Brown</strong> <code>#2B2118</code></p>
-          <p>Body text, header and footer background</p>
+        <div>
+          <div class="color color2"></div>
+          <p>#2B2118 - text, header, footer</p>
         </div>
 
-        <div class="swatch">
-          <div class="chip chip-burgundy"></div>
-          <p><strong>Burgundy</strong> <code>#7B2D26</code></p>
-          <p>Headings, links, buttons</p>
+        <div>
+          <div class="color color3"></div>
+          <p>#7B2D26 - headings, links, buttons</p>
         </div>
-
-        <div class="swatch">
-          <div class="chip chip-gold"></div>
-          <p><strong>Old Gold</strong> <code>#B8923F</code></p>
-          <p>Accents: borders, dividers, hover states (not used for text on parchment)</p>
-        </div>
-
       </div>
     </section>
 
 
-    <section id="typography">
+    <section>
       <h2>Typography</h2>
 
-      <div class="font-sample">
-        <p class="font-name">Cinzel &mdash; headings, site title, apostle names</p>
-        <p class="sample-cinzel">Peter, Andrew, James and John</p>
-      </div>
+      <p>Cinzel: headings and apostle names</p>
+      <p class="cinzel">Peter, Andrew, James and John</p>
 
-      <div class="font-sample">
-        <p class="font-name">Lora &mdash; body text, biographies, captions</p>
-        <p class="sample-lora">
-          And he saith unto them, Follow me, and I will make you fishers of men.
-          <em>(Matthew 4:19)</em>
-        </p>
-      </div>
+      <p>Lora: body text</p>
+      <p class="lora">Follow me, and I will make you fishers of men. (Matthew 4:19)</p>
     </section>
 
 
-    <section id="imagery">
-      <h2>Imagery Style</h2>
-
-      <p>
-        Every apostle will be shown as a simple pencil sketch portrait (SVG) with his traditional
-        symbol, for example keys for Peter. The sketches keep a consistent, hand-drawn look
-        across the whole site and load quickly.
-      </p>
-
-      <figure class="sketch">
-        <img src="images/peter-sketch.svg" alt="Pencil sketch of the apostle Peter with a curly beard, holding two keys" width="300" height="360" loading="lazy">
-        <figcaption>Sample portrait: Peter</figcaption>
-      </figure>
-    </section>
-
-
-    <section id="wireframes">
+    <section>
       <h2>Wireframes</h2>
 
-      <p>Home page layout in the mobile and desktop (wider) views.</p>
-
       <div class="wireframes">
-
         <figure>
-          <img src="images/wireframe-mobile.svg" alt="Mobile wireframe: header with logo and menu button, hero image with title, introduction, apostle cards stacked in one column, featured story and footer" width="360" height="740" loading="lazy">
-          <figcaption>Mobile view</figcaption>
+          <img src="images/wireframe-mobile.webp" alt="Mobile wireframe of the home page" width="400" height="1463" loading="lazy">
+          <figcaption>Mobile</figcaption>
         </figure>
 
         <figure>
-          <img src="images/wireframe-desktop.svg" alt="Desktop wireframe: header with logo and navigation links, wide hero image with title, introduction, apostle cards in a four-column grid, featured story next to a map of places, and footer" width="1000" height="700" loading="lazy">
-          <figcaption>Desktop view</figcaption>
+          <img src="images/wireframe-desktop.webp" alt="Desktop wireframe of the home page" width="1000" height="760" loading="lazy">
+          <figcaption>Desktop</figcaption>
         </figure>
-
       </div>
     </section>
 
@@ -195,12 +139,7 @@
 
 
   <footer>
-    <p>
-      &copy;
-      <span id="currentyear"></span>
-      Timofey Klintsov | WDD 131 Project
-    </p>
-
+    <p>&copy; <span id="currentyear"></span> Timofey Klintsov | WDD 131</p>
     <p id="lastModified"></p>
   </footer>
 
